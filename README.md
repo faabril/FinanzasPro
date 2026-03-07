@@ -1,31 +1,42 @@
-FinanzasPro - Simulador de Gastos Mensuales 
+# FinanzasPro - Simulador de Gastos Inteligente 🚀
 
-¡Bienvenido a FinanzasPro! Este proyecto es un simulador interactivo diseñado para ayudar a los usuarios a llevar un control estricto de sus finanzas personales, permitiendo gestionar un presupuesto inicial y registrar gastos por categorías.
-
----
-
-Cómo utilizar la aplicación
-
-Para utilizar el simulador, sigue estos sencillos pasos:
-
-1. Configuración Inicial: Al ingresar, verás un formulario de "Configuración Inicial". Ingresa tu nombre y el presupuesto total (sueldo o dinero disponible) que tienes para el mes. Haz clic en "Configurar Cuenta".
-2. Registro de Gastos: Una vez configurada tu cuenta, se habilitará el panel de gastos. Completa el concepto del gasto, el monto y selecciona una categoría (Comida, Servicios, Ocio o Varios). Haz clic en "Agregar Gasto".
-3. Visualización y Control: 
-   - A la derecha verás una lista con todos tus gastos registrados.
-   - En la parte inferior de la lista, el simulador calculará automáticamente tu Saldo Restante. Si te excedes del presupuesto, el saldo se mostrará en rojo.
-4. Filtrado: Puedes usar el selector de "Filtrar por" para ver únicamente los gastos de una categoría específica.
-5. Gestión: Puedes eliminar gastos individuales haciendo clic en la "X" roja o resetear toda la aplicación con el botón "Borrar todos los datos".
-
-> Nota: Tus datos se guardan automáticamente en el navegador. Si cierras la pestaña o refrescas la página (F5), tu información seguirá allí.
+**FinanzasPro** es una aplicación web interactiva diseñada para la gestión de finanzas personales. Permite a los usuarios establecer un presupuesto mensual, registrar gastos categorizados y recibir consejos financieros dinámicos.
 
 ---
 
-Herramientas Utilizadas
+## 🌟 Características Principales
 
-Para el desarrollo de esta aplicación se utilizaron las siguientes tecnologías y conceptos:
-
-HTML5 & CSS3: Estructura semántica y estilos personalizados para una mejor experiencia de usuario.
-JavaScript: Lógica de programación pura, sin frameworks externos.
-Bootstrap 5: Framework de CSS utilizado para el diseño responsivo y componentes de interfaz profesional.
+1. **Gestión de Presupuesto**: Configuración inicial de usuario y capital disponible.
+2. **Registro de Gastos**: Clasificación por categorías (Comida, Servicios, Ocio, Varios).
+3. **Persistencia de Datos**: Uso de `localStorage` para mantener la información tras recargar la página.
+4. **Filtrado Avanzado**: Visualización selectiva de gastos por categoría.
+5. **Asincronismo**: Carga de consejos financieros aleatorios mediante un archivo JSON local.
+6. **Interfaz de Usuario (UX)**: Notificaciones estéticas y alertas dinámicas.
 
 ---
+
+## 🛠️ Herramientas y Tecnologías
+
+### 1. JavaScript Avanzado
+* **Fetch & Async/Await**: Se utiliza para consumir el archivo `sugerencias.json`, simulando una petición a una API externa para mostrar consejos al usuario.
+* **DOM & Eventos**: Manipulación dinámica del HTML sin eventos en línea (inline).
+* **Métodos de Array**: Uso intensivo de `.filter()` para búsqueda/borrado y `.reduce()` para el cálculo de balances.
+
+### 2. Librerías Externas
+* **SweetAlert2**: Implementada para ventanas modales de bienvenida y confirmaciones críticas (como borrar un gasto).
+* **Toastify JS**: Utilizada para notificaciones rápidas y no intrusivas, como el aviso de "Gasto Agregado" o alertas de "Presupuesto Excedido".
+* **Bootstrap 5**: Framework de estilos para garantizar un diseño responsivo y profesional.
+
+---
+
+## 📖 Cómo utilizar la aplicación
+
+1. **Inicia tu sesión**: Ingresa tu nombre y tu presupuesto del mes.
+2. **Lee el consejo**: En la parte superior aparecerá un consejo financiero cargado asincrónicamente.
+3. **Carga tus gastos**: Completa el formulario y verás cómo tu saldo se actualiza en tiempo real.
+4. **Controla**: Si tu saldo restante llega a ser negativo, recibirás una alerta visual inmediata.
+5. **Filtra**: Utiliza el selector de categorías para analizar en qué estás gastando más.
+
+---
+
+Desarrollado por **Fabrizio** - 2026.
